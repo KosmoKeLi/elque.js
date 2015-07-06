@@ -1,0 +1,17 @@
+﻿@mixin cols($p) {
+    @for $i from 1 through $grid-columns {
+        &.#{$p}#{$i} {
+            margin-left: 0;
+            width: percentage((1/$grid-columns) * $i);
+        }
+    }
+}
+
+@mixin cols-100($p) {
+    @for $i from 1 through $grid-columns {
+        &.#{$p}#{$i} {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+﻿.elq-container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+
+    .row {
+        margin-left: -.75rem;
+        margin-right: -.75rem;
+
+        .col {
+            width: 100%;
+
+            @include cols('s');
+        }
+    }
+
+    &[data-elq-state$="m"],
+    &[data-elq-state$="l"] {
+        //width: 85%;
+
+        .row {
+            .col {
+                @include cols('m');
+            }
+        }
+    }
+
+    &[data-elq-state$="l"] {
+        //width: 70%;
+
+        .row {
+            .col {
+                @include cols('l');
+            }
+        }
+    }
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    .col {
+        float: left;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 .75rem;
+    }
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@include cols('m');
+@include cols('l');

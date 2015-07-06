@@ -1,0 +1,40 @@
+﻿.elq-container {
+    .row {
+        .col {
+            border: 1px solid white;
+            text-align: center;
+            font-family: Arial;
+            text-transform: uppercase;
+            padding: 10px;
+            background-color: yellow;
+            -moz-transition: all linear 250ms;
+            -o-transition: all linear 250ms;
+            -webkit-transition: all linear 250ms;
+            transition: all linear 250ms;
+        }
+    }
+}
+
+.elq-container[data-elq-state="l"] {
+    .row {
+        .col {
+            background-color: red;
+        }
+    }
+}
+
+.elq-container[data-elq-state="m"] {
+    .row {
+        .col {
+            background-color: green;
+        }
+    }
+}
+
+.elq-container[data-elq-state="s"] {
+    .row {
+        .col {
+            background-color: blue;
+        }
+    }
+}
