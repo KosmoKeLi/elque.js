@@ -36,7 +36,11 @@ The 'data-elq-state'-attribute can be used in CSS to style elements.
 ```
 
 Smallest screen size will have no 'data-elq-state'-attribute.
-Custom keys can be defined in 'data-elq' ex.: { small: 100, medium: 200, large: 300, xl: 400 }.
+Any custom keys can be defined in 'data-elq' ex.:
+
+```html
+<div data-elq="{ small: 100, medium: 200, large: 300, xl: 400 }"></div>
+```
 
 ## Bonus
 Included is a sass-folder that contains a grid system that can be used together with elque.
